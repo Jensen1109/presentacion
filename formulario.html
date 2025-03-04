@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="" method="get" enctype="multipart/form-data">
+
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="ingrese su nombre">
+        </div>
+        <div>
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" placeholder="digite su apellido">
+        </div>
+        <hr>    
+        <div>
+            
+            <label for="cedula">Cedula</label>
+            <input type="number" name="cedula" id="cedula"  placeholder="Cedula" required pattern="[0-9]{10,10}" >
+        </div>
+        <hr>
+        <div>
+            <label for="telefono">Telefono</label>
+            <input type="number" name="telefono" id="cedula" placeholder="Telefono"  required pattern="[0-9] {7,11}">
+        </div>
+        <hr>
+        <div>
+            <label for="contrasena">Contrasena</label>
+            <input type="password" name="contrasena" id="contrasena" placeholder="password" required pattern="[0-9] {5-12}">
+        </div>
+        <h5> Porque nos contacta
+        <div>
+            <label for="trabajo">Trabajo</label>
+            <input type="radio" value="t" name="trabajo" id="trabajo">
+            <label for="entrevista">Entrevista</label>
+            <input type="radio" value="e" name="trabajo" id="entrevista">
+            <label for="consulta">Consulta</label>
+            <input type="radio" value="c" name="trabajo" id="consulta">
+        </div>
+    </h5>
+
+
+        <hr>
+        <select name="ciudad" id="ciudad">
+            <option value="">Girón</option>
+            <option value="">Bucaramanga</option>
+            <option value="">floridablanca</option>
+            <option value="">pidecuesta</option>
+            <option value="">Zapatoca</option>
+            <option value="">Vele</option>
+            <option value="">Cimitarra</option>
+            <option value="">Socorro</option>
+            <option value="">Sán gil</option>
+        </select>
+        <div>
+            <label for="masculino">Masculino</label>
+            <input type="radio" value="m" name="sexo" id="masculino">
+            <label for="femenino">Femenino</label>
+            <input type="radio" value="f" name="sexo" id="femenino">
+        </div>
+
+       
+
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
